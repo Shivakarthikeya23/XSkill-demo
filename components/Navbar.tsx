@@ -39,12 +39,20 @@ export default function Navbar() {
               </div>
             </a>
           </div>
-          <button
-            onClick={scrollToSignup}
-            className="px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-          >
-            Join Early Access
-          </button>
+          <div className="flex items-center gap-4">
+            <a
+              href="/auth/signin"
+              className="px-6 py-2 text-gray-700 hover:text-primary-600 font-semibold transition-colors"
+            >
+              Sign In
+            </a>
+            <a
+              href="/auth/signup"
+              className="px-6 py-3 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+            >
+              Get Started
+            </a>
+          </div>
         </div>
       </div>
     </nav>
